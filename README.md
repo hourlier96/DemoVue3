@@ -15,3 +15,14 @@ To get the complete version:
 ```
 
 ![Alt text](image.png)
+
+The source code is re-generated each time you run the script.
+
+So to keep png downloaded from outside:
+
+```bash
+
+git restore demo-vue3/src/assets/ex-python.png
+git restore demo-vue3/src/assets/python.png
+
+```
