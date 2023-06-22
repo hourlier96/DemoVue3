@@ -57,7 +57,7 @@ const vuetify = createVuetify({
     }
   },
   theme: {
-    defaultTheme: 'customLightTheme',
+    defaultTheme: 'customDarkTheme',
     themes: {
       customLightTheme,
       customDarkTheme
