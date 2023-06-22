@@ -1,3 +1,6 @@
+PROJECT_NAME=demo-vue3
+cd $PROJECT_NAME
+
 echo "
 <template>
   <v-container>
@@ -57,8 +60,7 @@ function changeComment() {
 }
 
 // - - - - - - - - - - -
-</script>
-" > src/components/Reactive.vue
+</script>" > src/components/Reactive.vue
 
 echo "
 <template>
@@ -134,5 +136,4 @@ import Reactive from '@/components/Reactive.vue'
   margin-right: 32px;
   margin-top: -85px;
 }
-</style>
-" > src/views/HomeView.vue
+</style>" > src/views/HomeView.vue

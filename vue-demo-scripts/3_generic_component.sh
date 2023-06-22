@@ -30,8 +30,7 @@ const props = defineProps({
     default: 'mdi-home'
   }
 })
-</script>
-" > src/components/common/CardContainer.vue
+</script>" > src/components/common/CardContainer.vue
 
 echo "
 <template>
@@ -52,5 +51,4 @@ import FormBinding from '@/components/FormBinding.vue'
   width: 50%;
   margin: auto;
 }
-</style>
-" > src/views/HomeView.vue
+</style>" > src/views/HomeView.vue

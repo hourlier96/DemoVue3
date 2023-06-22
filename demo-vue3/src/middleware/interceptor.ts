@@ -1,3 +1,4 @@
+
 import router from '@/router'
 const interceptor = () => {
     router.beforeEach((to, from, next) => {

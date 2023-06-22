@@ -36,4 +36,3 @@ const props = defineProps({
   display: block !important;
 }
 </style>
-

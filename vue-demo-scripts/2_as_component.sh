@@ -40,8 +40,7 @@ function changeFirstNameValue2() {
   width: 50%;
   margin: auto;
 }
-</style>
-" > src/components/FormBinding.vue
+</style>" > src/components/FormBinding.vue
 
 echo "
 <template>
@@ -59,5 +58,4 @@ import FormBinding from '@/components/FormBinding.vue'
   width: 50%;
   margin: auto;
 }
-</style>
-" > src/views/HomeView.vue
+</style>" > src/views/HomeView.vue

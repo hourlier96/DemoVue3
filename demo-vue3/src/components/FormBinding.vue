@@ -3,7 +3,7 @@
   <v-container>
     <div>Value: {{ textField }}</div>
     <v-text-field v-model="textField" label="First name" />
-    <v-btn @click="changeFirstNameValue()"> Change firstname</v-btn>
+    <v-btn variant=outlined @click="changeFirstNameValue()"> Change firstname</v-btn>
 
     <br />
     <br />
@@ -11,7 +11,7 @@
     <div>Value: {{ textField2 }}</div>
     <v-text-field v-bind:value="textField2" />
     <!-- v-on:input="textField2 = $event.target.value -->
-    <v-btn @click="changeFirstNameValue2()"> Change firstname 2</v-btn>
+    <v-btn variant=outlined @click="changeFirstNameValue2()"> Change firstname 2</v-btn>
   </v-container>
 </template>
 
@@ -37,4 +37,3 @@ function changeFirstNameValue2() {
   margin: auto;
 }
 </style>
-

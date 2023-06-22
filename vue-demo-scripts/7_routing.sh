@@ -1,3 +1,6 @@
+PROJECT_NAME=demo-vue3
+cd $PROJECT_NAME
+
 echo "<template>
   <v-navigation-drawer v-model=\"drawer\" :rail=\"rail\" permanent @click=\"rail = false\">
     <v-list-item
@@ -32,24 +35,23 @@ let drawer = ref(true)
 let rail = ref(true)
 </script>
 
-<style scoped></style>
-" > src/components/NavigationDrawer.vue
+<style scoped></style>" > src/components/NavigationDrawer.vue
 
-touch demo-vue3/src/views/DynamicView.vue
-touch demo-vue3/src/views/NotFound.vue
-touch demo-vue3/src/middleware/interceptor.ts
+touch src/views/DynamicView.vue
+touch src/views/NotFound.vue
+touch src/middleware/interceptor.ts
 
 
 echo "
 <template>
   <CardContainer title=\"Path\">
     <template #body>
-      <div class=\"text-center\">{{ $route.params.name }}</div>
+      <div class=\"text-center\">{{ \$route.params.name }}</div>
     </template></CardContainer
   >
   <CardContainer title=\"Url Param\">
     <template #body>
-      <div class=\"text-center\">{{ $route.query.id }}</div>
+      <div class=\"text-center\">{{ \$route.query.id }}</div>
     </template></CardContainer
   >
 
@@ -76,17 +78,15 @@ function backToHome() {
 
 function updateQueryParam() {
   if (route.query.id == null) {
-    console.log('in,')
-    router.push({ path: `/static_path`, query: { id: 10 } })
+    router.push({ path: \`/static_path\`, query: { id: 10 } })
   } else {
     const random = Math.floor(Math.random() * 100)
-    router.push({ path: `/static_path`, query: { id: random } })
+    router.push({ path: \`/static_path\`, query: { id: random } })
   }
 }
 </script>
 
-<style></style>
-" > demo-vue3/src/views/DynamicView.vue
+<style></style>" > src/views/DynamicView.vue
 
 
 echo "
@@ -115,14 +115,12 @@ const router = createRouter({
   ]
 })
 
-export default router
-" > demo-vue3/src/router/index.ts
+export default router" > src/router/index.ts
 
 echo "
 <template>
   <v-alert color=\"error\"> THIS PAGE DOES NOT EXIST </v-alert>
-</template>
-" > demo-vue3/src/views/NotFound.vue
+</template>" > src/views/NotFound.vue
 
 echo "
 import router from '@/router'
@@ -140,5 +138,4 @@ const interceptor = () => {
 
 }
 
-export default interceptor
-" > demo-vue3/src/middleware/interceptor.ts
+export default interceptor" > src/middleware/interceptor.ts

@@ -1,8 +1,6 @@
 PROJECT_NAME=demo-vue3
 cd $PROJECT_NAME
 
-mkdir src/components/common
-touch src/components/common/CardContainer.vue
 
 echo "
 <template>
@@ -33,8 +31,7 @@ const props = defineProps({
     default: 'mdi-home'
   }
 })
-</script>
-" > src/components/common/CardContainer.vue
+</script>" > src/components/common/CardContainer.vue
 
 echo "
 <template>
@@ -59,5 +56,4 @@ import FormBinding from '@/components/FormBinding.vue'
   width: 50%;
   margin: auto;
 }
-</style>
-" > src/views/HomeView.vue
+</style>" > src/views/HomeView.vue

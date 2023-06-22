@@ -59,8 +59,7 @@ onBeforeMount(() => {
 })
 </script>
 
-<style scoped></style>
-" > src/App.vue
+<style scoped></style>" > src/App.vue
 
 
 # Set all plugins in main
@@ -138,8 +137,7 @@ app.use(createPinia())
 app.use(router)
 app.use(vuetify)
 
-app.mount('#app')
-" > src/main.ts
+app.mount('#app')" > src/main.ts
 
 
 # Set default layout
@@ -175,8 +173,7 @@ const theme = useTheme()
 function toggleTheme() {
   theme.global.name.value = theme.global.current.value.dark ? 'customLightTheme' : 'customDarkTheme'
 }
-</script>
-" > src/components/Navbar.vue
+</script>" > src/components/Navbar.vue
 
 # Set NavigationDrawer
 
@@ -213,8 +210,7 @@ let drawer = ref(true)
 let rail = ref(true)
 </script>
 
-<style scoped></style>
-" > src/components/NavigationDrawer.vue
+<style scoped></style>" > src/components/NavigationDrawer.vue
 
 # Set Footer
 echo "<template>
@@ -228,9 +224,7 @@ echo "<template>
 
 <script setup lang=\"ts\"></script>
 
-<style scoped></style>
-
-" > src/components/Footer.vue
+<style scoped></style>" > src/components/Footer.vue
 
 # Set Home view
 echo "<template>
@@ -244,8 +238,7 @@ echo "<template>
   width: 50%;
   margin: auto;
 }
-</style>
-" > src/views/HomeView.vue
+</style>" > src/views/HomeView.vue
 
 # Set router file from current layout
 echo "import { createRouter, createWebHistory } from 'vue-router'
@@ -266,13 +259,11 @@ export default router
 " > src/router/index.ts
 
 # Remove default style
-echo "
-@import './base.css';
+echo "@import './base.css';
 
 html {
   overflow-y: auto !important;
-}
-" > src/assets/main.css 
+}" > src/assets/main.css 
 
 # Install deps
 npm install

@@ -1,3 +1,4 @@
+
 <template>
   <CardContainer title="Path">
     <template #body>
@@ -33,7 +34,6 @@ function backToHome() {
 
 function updateQueryParam() {
   if (route.query.id == null) {
-    console.log('in,')
     router.push({ path: `/static_path`, query: { id: 10 } })
   } else {
     const random = Math.floor(Math.random() * 100)

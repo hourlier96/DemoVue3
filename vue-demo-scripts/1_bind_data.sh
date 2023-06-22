@@ -1,8 +1,7 @@
 PROJECT_NAME=demo-vue3
 cd $PROJECT_NAME
 
-echo "
-<template>
+echo "<template>
   <v-container>
     <div>Value: {{ textField }}</div>
     <v-text-field v-model=\"textField\" label=\"First name\" />
@@ -39,5 +38,4 @@ function changeFirstNameValue2() {
   width: 50%;
   margin: auto;
 }
-</style>
-" > src/views/HomeView.vue
+</style>" > src/views/HomeView.vue

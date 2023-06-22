@@ -64,8 +64,7 @@ import FormBinding from '@/components/FormBinding.vue'
   margin-right: 32px;
   margin-top: -85px;
 }
-</style>
-" > src/views/HomeView.vue
+</style>" > src/views/HomeView.vue
 
 echo "
 <template>
@@ -104,5 +103,4 @@ const props = defineProps({
 .v-card-actions {
   display: block !important;
 }
-</style>
-" > src/components/common/CardContainer.vue
+</style>" > src/components/common/CardContainer.vue
