@@ -1,7 +1,9 @@
 
 # Create project
-npm create vue@3 demo-vue3
-cd demo-vue3
+PROJECT_NAME=demo-vue3
+
+npm create vue@3 $PROJECT_NAME
+cd $PROJECT_NAME
 
 # Define ts configurations
 echo "{
@@ -277,5 +279,3 @@ npm install @fortawesome/fontawesome-free -D
 npm install @mdi/font -D 
 
 npm run format
-code .
-npm run dev

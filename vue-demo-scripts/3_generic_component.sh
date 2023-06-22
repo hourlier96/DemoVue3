@@ -1,3 +1,8 @@
+PROJECT_NAME=demo-vue3
+cd $PROJECT_NAME
+
+echo $(ls -l src/components)
+
 mkdir src/components/common
 touch src/components/common/CardContainer.vue
 

@@ -1,3 +1,4 @@
+
 <template>
   <v-container>
     <div class="mt-4 d-flex justify-content-center flex-wrap">
@@ -61,3 +62,4 @@ import FormBinding from '@/components/FormBinding.vue'
   margin-top: -85px;
 }
 </style>
+

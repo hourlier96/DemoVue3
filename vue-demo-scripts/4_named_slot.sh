@@ -1,3 +1,6 @@
+PROJECT_NAME=demo-vue3
+cd $PROJECT_NAME
+
 mkdir src/components/common
 touch src/components/common/CardContainer.vue
 

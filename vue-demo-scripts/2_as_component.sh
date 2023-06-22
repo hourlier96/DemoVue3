@@ -1,3 +1,6 @@
+PROJECT_NAME=demo-vue3
+cd $PROJECT_NAME
+
 touch src/components/FormBinding.vue
 echo "
 <template>

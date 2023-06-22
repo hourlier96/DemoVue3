@@ -1,3 +1,6 @@
+PROJECT_NAME=demo-vue3
+cd $PROJECT_NAME
+
 echo "
 <template>
   <v-container>
@@ -103,5 +106,3 @@ const props = defineProps({
 }
 </style>
 " > src/components/common/CardContainer.vue
-
-echo "Don't forget to add 'python.png' (logo) & 'ex-python.png' (code example) in 'src/assets' folder"

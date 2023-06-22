@@ -1,3 +1,4 @@
+
 <template>
   <v-card :title="props.title" :width="props.width" :prepend-icon="props.icon" class="mx-auto ma-4">
     <slot name="header" />
@@ -35,3 +36,4 @@ const props = defineProps({
   display: block !important;
 }
 </style>
+
