@@ -4,7 +4,7 @@ cd $PROJECT_NAME
 touch src/components/FormBinding.vue
 echo "
 <template>
-  <v-container>
+  <v-container class=\"text-center\">
     <div>Value: {{ textField }}</div>
     <v-text-field v-model=\"textField\" label=\"First name\" />
     <v-btn variant="outlined" @click=\"changeFirstNameValue()\"> Change firstname</v-btn>

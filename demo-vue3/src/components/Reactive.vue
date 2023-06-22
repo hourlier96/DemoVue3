@@ -1,16 +1,17 @@
-
 <template>
-  <v-container>
+  <v-container class="text-center">
     <v-text-field v-model="user.age" label="First name" disabled />
-    <v-btn variant=outlined @click="changeAge()" class="mb-4">
+    <v-btn variant="outlined" @click="changeAge()" class="mb-4 mr-2">
       <span> Change age</span>
     </v-btn>
-    <v-btn variant=outlined @click="badelyResetUser()" class="mb-4"> Reset user value (breaks reactivity)</v-btn>
+    <v-btn variant="outlined" @click="badelyResetUser()" class="mb-4">
+      Reset user value (breaks reactivity)</v-btn
+    >
     <v-select
       label="Select comment"
       :items="commentsArray.comments.map((comment) => comment.content)"
     />
-    <v-btn variant=outlined @click="changeComment()" class="mb-4"> Change comment</v-btn>
+    <v-btn variant="outlined" @click="changeComment()" class="mb-4"> Change comment</v-btn>
   </v-container>
 </template>
 
