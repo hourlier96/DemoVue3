@@ -13,3 +13,5 @@ To get the complete version:
 ```bash
 ./build_demo.sh
 ```
+
+![Alt text](image.png)
