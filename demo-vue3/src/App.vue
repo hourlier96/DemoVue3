@@ -22,8 +22,4 @@ onBeforeMount(() => {
 })
 </script>
 
-<style scoped>
-#main-container {
-  height: 100vh;
-}
-</style>
+<style scoped></style>

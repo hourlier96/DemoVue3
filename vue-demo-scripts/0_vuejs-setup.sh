@@ -59,11 +59,7 @@ onBeforeMount(() => {
 })
 </script>
 
-<style scoped>
-#main-container {
-  height: 100vh;
-}
-</style>
+<style scoped></style>
 " > src/App.vue
 
 
@@ -274,7 +270,7 @@ echo "
 @import './base.css';
 
 html {
-  overflow-y: auto;
+  overflow-y: auto !important;
 }
 " > src/assets/main.css 
 
