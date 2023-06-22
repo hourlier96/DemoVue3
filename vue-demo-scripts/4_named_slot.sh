@@ -42,8 +42,8 @@ echo "
     <CardContainer title=\"Even best title\" icon=\"mdi-heart\">
       <template #body> <FormBinding /> </template>
       <template #actions>
-        <v-btn> Action 1</v-btn>
-        <v-btn> Action 2</v-btn>
+        <v-btn variant="outlined"> Action 1</v-btn>
+        <v-btn variant="outlined"> Action 2</v-btn>
       </template>
     </CardContainer>
   </v-container>

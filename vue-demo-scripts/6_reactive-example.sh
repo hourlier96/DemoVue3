@@ -2,15 +2,15 @@ echo "
 <template>
   <v-container>
     <v-text-field v-model=\"user.age\" label=\"First name\" disabled />
-    <v-btn @click=\"changeAge()\" class=\"mb-4\">
+    <v-btn variant="outlined" @click=\"changeAge()\" class=\"mb-4\">
       <span> Change age</span>
     </v-btn>
-    <v-btn @click=\"badelyResetUser()\" class=\"mb-4\"> Reset user value (breaks reactivity)</v-btn>
+    <v-btn variant="outlined" @click=\"badelyResetUser()\" class=\"mb-4\"> Reset user value (breaks reactivity)</v-btn>
     <v-select
       label=\"Select comment\"
       :items=\"commentsArray.comments.map((comment) => comment.content)\"
     />
-    <v-btn @click=\"changeComment()\" class=\"mb-4\"> Change comment</v-btn>
+    <v-btn variant="outlined" @click=\"changeComment()\" class=\"mb-4\"> Change comment</v-btn>
   </v-container>
 </template>
 
@@ -67,8 +67,8 @@ echo "
       <CardContainer title=\"Form binding example\" icon=\"mdi-heart\">
         <template #body> <FormBinding /> </template>
         <template #actions>
-          <v-btn> Action 1</v-btn>
-          <v-btn> Action 2</v-btn>
+          <v-btn variant="outlined"> Action 1</v-btn>
+          <v-btn variant="outlined"> Action 2</v-btn>
         </template>
       </CardContainer>
 
