@@ -1,4 +1,3 @@
-
 <template>
   <v-container>
     <div class="mt-4 d-flex justify-content-center flex-wrap">
@@ -19,7 +18,7 @@
               width="30"
             />
             <div class="pl-8">
-              This is a short desciption of the snippet. More content for a better world...
+              This is a short description of the snippet. More content for a better world...
             </div>
           </div>
         </template>
@@ -62,4 +61,3 @@ import FormBinding from '@/components/FormBinding.vue'
   margin-top: -85px;
 }
 </style>
-

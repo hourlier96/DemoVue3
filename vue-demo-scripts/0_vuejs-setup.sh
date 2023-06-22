@@ -270,7 +270,13 @@ export default router
 " > src/router/index.ts
 
 # Remove default style
-echo "@import './base.css';" > src/assets/main.css 
+echo "
+@import './base.css';
+
+html {
+  overflow-y: auto;
+}
+" > src/assets/main.css 
 
 # Install deps
 npm install
