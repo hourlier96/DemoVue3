@@ -3,6 +3,11 @@
 PROJECT_NAME=demo-vue3
 
 npm create vue@3 $PROJECT_NAME
+
+# Keep downloaded images
+git restore demo-vue3/src/assets/ex-python.png
+git restore demo-vue3/src/assets/python.png
+
 cd $PROJECT_NAME
 
 # Define ts configurations

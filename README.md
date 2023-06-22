@@ -20,19 +20,6 @@ To follow demo step by step: You can run each script in vue-demo-scripts individ
 
 ![Alt text](image.png)
 
-## Keep images
-
-The source code is re-generated each time you run the script.
-
-
-So to keep png downloaded from outside:
-
-```bash
-
-git restore demo-vue3/src/assets/ex-python.png
-git restore demo-vue3/src/assets/python.png
-
-```
 
 <br/>
 
