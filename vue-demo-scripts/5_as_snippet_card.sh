@@ -66,8 +66,7 @@ import FormBinding from '@/components/FormBinding.vue'
 }
 </style>" > src/views/HomeView.vue
 
-echo "
-<template>
+echo "<template>
   <v-card :title=\"props.title\" :width=\"props.width\" :prepend-icon=\"props.icon\" class=\"mx-auto ma-4\">
     <slot name=\"header\" />
     <v-card-text> <slot name=\"body\" /> </v-card-text>

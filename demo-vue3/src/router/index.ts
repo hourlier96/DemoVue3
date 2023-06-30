@@ -2,6 +2,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import DynamicView from '@/views/DynamicView.vue'
+import Child1 from '@/views/child-exemple/Child1.vue'
+import Child2 from '@/views/child-exemple/Child2.vue'
 import NotFound from '@/views/NotFound.vue'
 
 const router = createRouter({
@@ -18,7 +20,20 @@ const router = createRouter({
       name: 'dynamic',
       meta: { requiresAuth: false },
       component: DynamicView,
-      // Use 'children' array to define nested routes
+      children: [
+        {
+          path: 'child-1',
+          name: 'child-1',
+          meta: { requiresAuth: false },
+          component: Child1
+        },
+        {
+          path: 'child-2',
+          name: 'child-2',
+          meta: { requiresAuth: true },
+          component: Child2
+        }
+      ]
     },
     { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
   ]
