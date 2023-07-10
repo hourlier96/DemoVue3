@@ -21,6 +21,12 @@
         title="Routing"
         value="dynamic"
       ></v-list-item>
+      <v-list-item
+        to="/snack_examples"
+        prepend-icon="mdi-message"
+        title="Store & Snack"
+        value="snacks"
+      ></v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>

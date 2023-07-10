@@ -15,9 +15,20 @@
 
 <script setup lang="ts">
 import { useTheme } from 'vuetify'
+import { snackStore } from '@/stores/snackbar'
 const theme = useTheme()
+const sStore = snackStore()
 
 function toggleTheme() {
   theme.global.name.value = theme.global.current.value.dark ? 'customLightTheme' : 'customDarkTheme'
+  const snackColor = theme.global.current.value.dark ? 'white' : 'black'
+  sStore.display({
+    text: 'Theme changed',
+    type: snackColor,
+    timeout: 1000,
+    location: 'top right',
+    icon: 'mdi-check',
+    closable: false
+  })
 }
 </script>

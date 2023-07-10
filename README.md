@@ -68,6 +68,14 @@ Setup the core structure
   - Read URL Path, Query params
   - Basic middleware to manage page routing
 
+### Script 8
+
+- Implement nested routing with childs
+
+### Script 9 
+
+- Implement store exemple with SnackBar component
+
 ### Coming later
 
 - Store management with Pinia

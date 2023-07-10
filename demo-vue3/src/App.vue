@@ -9,12 +9,14 @@
       <Footer />
     </v-layout>
   </v-app>
+  <SnackBar />
 </template>
 
 <script setup lang="ts">
 import NavigationDrawer from '@/components/NavigationDrawer.vue'
 import Footer from '@/components/Footer.vue'
 import Navbar from '@/components/Navbar.vue'
+import SnackBar from '@/components/common/SnackBar.vue'
 import { onBeforeMount } from 'vue'
 
 onBeforeMount(() => {

@@ -2,7 +2,7 @@
   <v-card :title="props.title" :width="props.width" :prepend-icon="props.icon" class="mx-auto ma-4">
     <slot name="header" />
     <v-card-text> <slot name="body" /> </v-card-text>
-    <v-divider></v-divider>
+    <v-divider v-if="$slots.footer"></v-divider>
     <v-card-actions class="mx-6">
       <slot name="footer" />
     </v-card-actions>

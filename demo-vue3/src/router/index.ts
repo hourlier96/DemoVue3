@@ -1,9 +1,9 @@
-
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import DynamicView from '@/views/DynamicView.vue'
 import Child1 from '@/views/child-exemple/Child1.vue'
 import Child2 from '@/views/child-exemple/Child2.vue'
+import SnackExamples from '@/views/SnackExamples.vue'
 import NotFound from '@/views/NotFound.vue'
 
 const router = createRouter({
@@ -14,6 +14,12 @@ const router = createRouter({
       name: 'home',
       meta: { requiresAuth: false },
       component: HomeView
+    },
+    {
+      path: '/snack_examples',
+      name: 'snack_examples',
+      meta: { requiresAuth: false },
+      component: SnackExamples
     },
     {
       path: '/:name',
@@ -35,7 +41,7 @@ const router = createRouter({
         }
       ]
     },
-    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
+    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound }
   ]
 })
 
