@@ -5,6 +5,7 @@ import Child1 from '@/views/child-exemple/Child1.vue'
 import Child2 from '@/views/child-exemple/Child2.vue'
 import SnackExamples from '@/views/SnackExamples.vue'
 import NotFound from '@/views/NotFound.vue'
+import ApiExemples from '@/views/ApiExemples.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,12 @@ const router = createRouter({
       name: 'snack_examples',
       meta: { requiresAuth: false },
       component: SnackExamples
+    },
+    {
+      path: '/api_exemples',
+      name: 'api_exemples',
+      meta: { requiresAuth: false },
+      component: ApiExemples
     },
     {
       path: '/:name',

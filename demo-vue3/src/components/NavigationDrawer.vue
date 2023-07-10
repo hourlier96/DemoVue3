@@ -27,6 +27,12 @@
         title="Store & Snack"
         value="snacks"
       ></v-list-item>
+      <v-list-item
+        to="/api_exemples"
+        prepend-icon="mdi-network"
+        title="API"
+        value="api"
+      ></v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>

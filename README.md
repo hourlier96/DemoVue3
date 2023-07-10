@@ -76,9 +76,11 @@ Setup the core structure
 
 - Implement store exemple with SnackBar component
 
+### Script 9.1
+
+- Implement API Configuration, Calls, Interceptor request/response
+
 ### Coming later
 
-- Store management with Pinia
-- API connexion with Axios (+ request/response interceptor)
 - Usage of Composition API with VueUse
 - Define your own Composables (Api, Stores,...)
