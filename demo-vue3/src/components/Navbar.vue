@@ -2,12 +2,16 @@
   <v-app-bar app dark height="50">
     <v-app-bar-nav-icon />
 
-    <v-toolbar-title>Application</v-toolbar-title>
+    <v-toolbar-title>{{ x }}x {{ y }}y</v-toolbar-title>
 
     <v-spacer />
 
-    {{ x }}x {{ y }}y
+    <p class="text-20px font-bold text-emerald-500">
+      {{ formatted }}
+    </p>
+
     <v-spacer />
+
     <UseOnline v-slot="{ isOnline }">
       <span class="navbar-text mr-16">
         Connected:
@@ -15,6 +19,8 @@
         </v-icon>
       </span>
     </UseOnline>
+
+    <v-spacer />
 
     <v-btn @click="toggleTheme">
       <v-icon v-if="theme.global.current.value.dark" icon="fa:fa fa-moon" />
@@ -32,6 +38,12 @@ const theme = useTheme()
 const sStore = snackStore()
 
 const { x, y } = useMouse()
+
+import { ref } from 'vue'
+import { useDateFormat, useNow } from '@vueuse/core'
+
+const formatter = ref('DD-MM-YYYY - HH:mm:ss')
+const formatted = useDateFormat(useNow(), formatter)
 
 function toggleTheme() {
   theme.global.name.value = theme.global.current.value.dark ? 'customLightTheme' : 'customDarkTheme'
