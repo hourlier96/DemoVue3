@@ -80,6 +80,11 @@ Setup the core structure
 
 - Implement API Configuration, Calls, Interceptor request/response
 
+### Script 9.2
+
+Composition API with VueUse
+
+
 ### Coming later
 
 - Usage of Composition API with VueUse
