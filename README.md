@@ -39,7 +39,6 @@ Setup the core structure
 
 - Add an exemple of how works binding between HTML templates & JS Data
 
-
 ### Script 2
 
 - Factorize the previous exemple as a reusable component
@@ -72,7 +71,7 @@ Setup the core structure
 
 - Implement nested routing with childs
 
-### Script 9 
+### Script 9
 
 - Implement store exemple with SnackBar component
 
@@ -84,8 +83,6 @@ Setup the core structure
 
 Composition API with VueUse
 
+### Script 9.3
 
-### Coming later
-
-- Usage of Composition API with VueUse
-- Define your own Composables (Api, Stores,...)
+Define your own Composables (Api, Stores, Api Wrapper)

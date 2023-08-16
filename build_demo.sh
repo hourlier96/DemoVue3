@@ -4,7 +4,9 @@ scripts=$(ls vue-demo-scripts)
 
 for script in $scripts
 do
+    echo "\nEXECUTING $script..."
     ./vue-demo-scripts/$script
+    echo "Done\n"
 done
 
 code .

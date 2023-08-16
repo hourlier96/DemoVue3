@@ -4,6 +4,7 @@ import { TEST_PREFIX } from './config'
 export default {
   baseAuthUrl: `/${TEST_PREFIX}`,
   async callExemple() {
+    console.log('test API called')
     return await api.get(`${this.baseAuthUrl}`, {})
   }
   // async functionExemple2() {
